@@ -1,4 +1,4 @@
-#Filter for stopping potential man-in-the-middle (MitM) of network traffic with 127.0.0.1 out all Web Proxy Auto-Discovery Protocol lookups
+# Filter for stopping potential man-in-the-middle (MitM) of network traffic with 127.0.0.1 out all Web Proxy Auto-Discovery Protocol lookups
 
 Before fetching its first page, a web browser implementing this method sends a DHCPINFORM query to the local DHCP server, and uses the URL from the WPAD option in 
 the servers reply. If the DHCP server does not provide the desired information, DNS is used. 
@@ -10,7 +10,7 @@ try the following URLs in turn until it finds a proxy configuration file within 
 - http://wpad.example.com/wpad.dat
 - http://wpad.com/wpad.dat (in incorrect implementations, see Security section on wikipedia and youtube video in ref urls below )
 
-#Ref urls:
+# Ref urls:
 - https://www.pcworld.com/article/415991/disable-wpad-now-or-have-your-accounts-and-private-data-compromised.html
 - https://en.wikipedia.org/wiki/Web_Proxy_Auto-Discovery_Protocol
 - https://www.reddit.com/r/pihole/comments/bgmx9t/wpad_domain_called_over_and_over/
