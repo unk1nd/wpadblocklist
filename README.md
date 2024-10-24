@@ -1,4 +1,4 @@
-# wpad block list for addguard
+# WPAD block list for AddGuard
   
 Filter for stopping potential man-in-the-middle (MitM) by sending lookups to DNS with use of the Web Proxy Auto-Discovery Protocol  
 This filter sets all DNS lookups for the DNS triversal of wpad.* lookups to 0.0.0.0
@@ -15,6 +15,9 @@ try the following URLs in turn until it finds a proxy configuration file within 
 - http://wpad.branch.example.com/wpad.dat
 - http://wpad.example.com/wpad.dat
 - http://wpad.com/wpad.dat (in incorrect implementations, see Security section on wikipedia and youtube video in ref urls below )
+
+I found that most of the devices in my home (phones, workstations ( linux and windows ) and servers have tried to do this lookup.   
+Most TLD domains have already global sink to 127.0.0.1, aleast for wpad.com and wpad.net. but, this is dependent of owners of the domains so you can never be to sure if owners change.
   
 ## Ref urls:
 - https://www.pcworld.com/article/415991/disable-wpad-now-or-have-your-accounts-and-private-data-compromised.html
