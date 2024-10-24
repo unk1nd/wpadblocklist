@@ -1,8 +1,11 @@
-# Filter for stopping potential man-in-the-middle (MitM) of network traffic with 127.0.0.1 out all Web Proxy Auto-Discovery Protocol lookups
+# wpad block list for addguard
+Filter for stopping potential man-in-the-middle (MitM) of network traffic with 127.0.0.1 out all Web Proxy Auto-Discovery Protocol lookups
 
-Before fetching its first page, a web browser implementing this method sends a DHCPINFORM query to the local DHCP server, and uses the URL from the WPAD option in 
+Before fetching its first page, a web browser implementing this method sends a 
+DHCPINFORM query to the local DHCP server, and uses the URL from the WPAD option in 
 the servers reply. If the DHCP server does not provide the desired information, DNS is used. 
-If, for example, the network name of the users computer is pc.department.branch.example.com, the browser will 
+If, for example, the network name of the users computer
+is pc.department.branch.example.com, the browser will 
 try the following URLs in turn until it finds a proxy configuration file within the domain of the client:
 
 - http://wpad.department.branch.example.com/wpad.dat
