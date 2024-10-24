@@ -18,7 +18,5 @@
 !  https://www.youtube.com/watch?v=uwsykPWa5Lc
 !
 
-|| wpad.* ^ $dnsrewrite=NXDOMAIN
-0.0.0.0 wpad.*
-0.0.0.0 wpad
+||wpad.*^
 
